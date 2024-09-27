@@ -5,6 +5,8 @@ import Add from './pages/Add';
 import Update from './pages/Update';
 import NotFound from './pages/NotFound';
 import List from './pages/List';
+import About from './pages/About';
+import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
@@ -12,6 +14,8 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route path='/list' element={<List />} />
           <Route path="/add" element={<Add />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/update/:id" element={<Update />} />
           <Route path="*" element={<NotFound />} />
         </Route>
