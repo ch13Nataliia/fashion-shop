@@ -1,9 +1,14 @@
 // import React from 'react'
 import { SiShopware } from 'react-icons/si';
+import { GoSearch } from 'react-icons/go';
+import { FaShoppingBasket } from "react-icons/fa";
+import { MdOutlineLogin } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
+
+
 import { NavbarMenu } from '../mockData/data';
 
 const Header = () => {
-
   return (
     <>
       <nav>
@@ -15,17 +20,40 @@ const Header = () => {
             <p className="text-secondary uppercase">Shop</p>
           </div>
           {/* Menu section */}
-          <div className='hidden md:block'>
-            <ul className='flex items-center gap-6 text-gray-700'>
-             {NavbarMenu.map((item) => {
-              return (
-                <li key={item.id}><a href={item.link} className='inline-block py-1 px-3 hover:text-primary font-semibold'>{item.title}</a></li>
-              )
-             })}
+          <div className="hidden md:block">
+            <ul className="flex items-center gap-6 text-gray-700">
+              {NavbarMenu.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={item.link}
+                      className="inline-block py-1 px-3 hover:text-primary font-semibold"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           {/* Icon section */}
+          <div className='flex items-center gap-4'>
+            <button className='text-2xl hover:bg-primary hover:text-white rounded-full p-2'>
+              <GoSearch />
+            </button>
+            <button className='text-2xl hover:bg-primary hover:text-white rounded-full p-2'>
+              <FaShoppingBasket  />
+            </button>
+            <button className='text-primary text-2xl hover:bg-primary hover:text-white rounded-md px-6 py-2 border-2 border-primary font-semibold duration-200 '>
+            <MdOutlineLogin />
+
+            </button>
+          </div>
           {/* Mobile humburger Menu section */}
+          <div className='md:hidden'>
+          <GiHamburgerMenu className='text-2xl'/>
+
+          </div>
         </div>
       </nav>
       {/* Mobile sidenar section */}
