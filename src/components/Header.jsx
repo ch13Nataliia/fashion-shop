@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import { SiShopware } from 'react-icons/si';
 import { GoSearch } from 'react-icons/go';
 import { FaShoppingBasket } from "react-icons/fa";
@@ -7,8 +7,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 
 import { NavbarMenu } from '../mockData/data';
+import ResponsiveMenu from './ResponsiveMenu';
 
 const Header = () => {
+  const [open, setOpen] = React.useState(false)
   return (
     <>
       <nav>
@@ -44,19 +46,19 @@ const Header = () => {
             <button className='text-2xl hover:bg-primary hover:text-white rounded-full p-2'>
               <FaShoppingBasket  />
             </button>
-            <button className='text-primary text-2xl hover:bg-primary hover:text-white rounded-md px-6 py-2 border-2 border-primary font-semibold duration-200 '>
+            <button className='text-primary text-2xl hover:bg-primary hover:text-white rounded-md px-6 py-2 border-2 border-primary font-semibold duration-200 hidden md:block '>
             <MdOutlineLogin />
 
             </button>
           </div>
           {/* Mobile humburger Menu section */}
-          <div className='md:hidden'>
+          <div className='md:hidden' onClick={() => setOpen(!open)}>
           <GiHamburgerMenu className='text-2xl'/>
-
           </div>
         </div>
       </nav>
       {/* Mobile sidenar section */}
+      <ResponsiveMenu open={open}/>
     </>
   );
 };
