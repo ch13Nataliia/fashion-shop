@@ -1,3 +1,5 @@
+import { FaPlay } from "react-icons/fa";
+
 const Hero = () => {
   return (
     <section>
@@ -12,7 +14,12 @@ const Hero = () => {
             <p>
               <span className="text-primary">FW24</span> collection
             </p>
-            
+            {/* button section */}
+            <div className="flex justify-center items-center  gap-8 md:justify-start !mt-4">
+              <button className="primary-btn flex items-center gap-2 ">Order NOW</button>
+              <button className=" flex gap-2 ustify-center items-center">
+              <FaPlay />Watch NOW</button>
+            </div>
           </div>
         </div>
 
