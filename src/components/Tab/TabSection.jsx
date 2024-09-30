@@ -38,12 +38,12 @@ const TabSection = () => {
             key={card.id}
             initial={{ opacity: 0, x: 10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="p-4 border rounded shadow-sm space-y-2"
+            className="p-4 border rounded shadow-md space-y-2"
           >
             <img
               src={card.image}
-              alt=""
-              className="h-[240px] w-full object-cover"
+              alt="product-data-tabs"
+              className="h-[340px] w-full object-contain"
             />
             <p className="text-xl font-semibold">{card.title}</p>
             <p className="text-gray-500">{card.category}</p>

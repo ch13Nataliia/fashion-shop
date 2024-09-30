@@ -3,7 +3,7 @@ import { SlideUp } from '../../utility/animation';
 
 const Banner = ({ image, title, subtitle, link }) => {
   return (
-    <div className="container">
+    <div className="container ">
       <div className="bg-[#f9f9f9] grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14 ">
         {/* Banner image section */}
         <div className="flex justify-center items-center">
