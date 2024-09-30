@@ -17,14 +17,14 @@ const CollectionData = [
     title: 'Pants Collection',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     icon: <PiPantsFill />,
-    delay: 0.3,
+    delay: 0.6,
   },
   {
     id: 3,
     title: 'Bags Collection',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     icon: <FaBagShopping />,
-    delay: 0.3,
+    delay: 0.8,
   },
 ];
 

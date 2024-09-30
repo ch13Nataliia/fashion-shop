@@ -31,11 +31,13 @@ const Hero = () => {
               <span className="text-primary">FW24</span> collection
             </p>
             {/* button section */}
-            <motion.div  variants={SlideLeft(0.9)}
-            initial="hidden"
-            whileInView={"visible"}
-            viewport={{ once: true }}
-            className="flex justify-center gap-6">
+            <motion.div
+              variants={SlideLeft(0.9)}
+              initial="hidden"
+              whileInView={'visible'}
+              viewport={{ once: true }}
+              className="flex justify-center gap-6"
+            >
               <button className="primary-btn flex items-center gap-2 ">
                 Order NOW
               </button>
