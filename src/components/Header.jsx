@@ -18,8 +18,8 @@ const Header = () => {
           {/* Logo section */}
           <div className="text-2xl flex items-center gap-2 font-bold  py-2">
             <SiShopware fill="orange" />
-            <p>NT_Coder</p>
-            <p className="text-secondary uppercase">Shop</p>
+            <p className='uppercase'>Twinset</p>
+            <p className="text-secondary text-sm">Milano</p>
           </div>
           {/* Menu section */}
           <div className="hidden md:block">
