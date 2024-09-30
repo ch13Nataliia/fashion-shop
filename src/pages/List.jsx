@@ -4,6 +4,7 @@ import Collections from '../components/collections/Collections';
 import Banner from '../components/Banner/Banner';
 import Img1 from '../assets/banners/banner1.webp';
 import Img2 from '../assets/banners/banner2.jpg';
+import TabSection from '../components/Tab/TabSection';
 const BannerData = 
   {
     id: 1,
@@ -37,6 +38,8 @@ const List = () => {
       </div>
       <Collections />
       <Banner {... BannerData}/>
+      <TabSection />
+
       <Banner{... Banner2Data}/>
     </div>
   );
