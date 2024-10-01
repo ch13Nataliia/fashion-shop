@@ -6,6 +6,7 @@ import Img1 from '../assets/banners/banner1.webp';
 import Img2 from '../assets/banners/banner2.jpg';
 import TabSection from '../components/Tab/TabSection';
 import Testimonials from '../components/Testimonials/Testimonials';
+import Banner2 from '../components/Banner/Banner2';
 const BannerData = 
   {
     id: 1,
@@ -43,6 +44,7 @@ const List = () => {
 
       <Banner{... Banner2Data}/>
       <Testimonials />
+      <Banner2 />
     </div>
   );
 };

@@ -33,7 +33,7 @@ const Collections = () => {
     <div>
       <div className="container py-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-playfair">
-          <div className="space-y-4 p-6">
+          <div className="space-y-4 p-6">clear
             <h1 className="text-3xl md:text-4xl">What we offer for you</h1>
             <p className="text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
