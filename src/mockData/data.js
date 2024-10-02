@@ -21,12 +21,17 @@ export const NavbarMenu = [
     link: '/about',
   },
   {
-    id: 3,
+    id: 2,
+    title: 'FW24-Collection',
+    link: '/winterCollection',
+  },
+  {
+    id: 4,
     title: 'Add',
     link: '/add',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Contact',
     link: '/contact',
   },

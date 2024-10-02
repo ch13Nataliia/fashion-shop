@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import List from './pages/List';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import WinterCollection from './pages/WinterCollection';
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route index element={<List />} />
           <Route path="/add" element={<Add />} />
+          <Route path="/winterCollection" element={<WinterCollection />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/update/:id" element={<Update />} />
