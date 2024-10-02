@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="bg-[#f9f9f9]">
       <div className="container">
         {/* brand info section */}
-        <div className="grid md:grid-cols-4 md:gap-4 py-5 border-t-2 border-gray-300/10">
+        <div className="grid md:grid-cols-4 md:gap-4 py-5 border-t-2 border-gray-300/10 ">
           <div className="py-8 px-4 space-y-4">
             <div className="text-2xl flex items-center gap-2 font-bold  py-2">
               <SiShopware fill="orange" />
@@ -67,8 +67,8 @@ const Footer = () => {
           </div>
 
           {/* customer care Links section */}
-          <div className="py-10 px-4 space-y-4">
-            <div className="space-y-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 md:col-span-3 md:ml-14  ">
+            <div className="py-10 px-4 space-y-4">
               <h2 className="font-bold text-lg">Customer Care</h2>
               <ul className="space-y-4 text-sm">
                 <li>
@@ -91,11 +91,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
 
-          {/* Collections Links section */}
-          <div className="py-10 px-4 space-y-4">
-            <div className="space-y-6">
+            {/* Collections Links section */}
+            <div className="py-10 px-4 space-y-4">
               <h2 className="font-bold text-lg">Collection </h2>
               <ul className="space-y-4 text-sm">
                 <li>
@@ -118,12 +116,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
 
-          {/* corporate Links section */}
-          <div className="py-10 px-4 space-y-4">
-            <div className="space-y-6">
-              <h2 className="font-bold text-lg">Collection </h2>
+            {/* corporate Links section */}
+            <div className="py-10 px-4 space-y-4">
+              <h2 className="font-bold text-lg">Corporate </h2>
               <ul className="space-y-4 text-sm">
                 <li>
                   <a href="#">Twinset World</a>
@@ -146,6 +142,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* copyright section */}
+        <div className="text-center py-6 border-t-2 border-gray-300/10  ">
+          <span className='text-sm opacity-50'>copyright 2024 NT </span>
         </div>
       </div>
     </div>
