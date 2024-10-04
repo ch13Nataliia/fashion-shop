@@ -21,7 +21,7 @@ export const NavbarMenu = [
     link: '/about',
   },
   {
-    id: 2,
+    id: 3,
     title: 'FW24-Collection',
     link: '/winterCollection',
   },

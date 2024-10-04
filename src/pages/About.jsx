@@ -1,10 +1,8 @@
 
-
 const About = () => {
   return (
     <div>
-
-      About Page
+about
     </div>
   )
 }
