@@ -103,31 +103,52 @@ const ContactForm = () => {
             <p>Message us: we will get back in touch as soon as we can!</p>
           </div>
           {/* // form section */}
-          <form>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-         <div className='grid grid-cols-1 gap-6'>
-         <label className="block">
-              <span className="text-gray-700">Input (text)</span>
-              <input
-                className="form-input mt-1 block w-full"
-                placeholder="john@example.com"
-              />
-            </label>
-         <label className="block">
-              <span className="text-gray-700">Input (email)</span>
-              <input
-                type="email"
-                className="form-input mt-1 block w-full"
-                placeholder="john@example.com"
-              />
-            </label>
-         </div>
+          <form className=''>
+            <div className="space-y-4">
 
-          </div>
+              <div className="flex gap-4 border-2 p-2">
+                <label className="border-2">
+                  <span className="text-gray-700">Name</span>
+                  <input
+                    type="text"
+                    className="form-input mt-1 block w-full"
+                  />
+                </label>
+                <label className="border-2 w-full">
+                  <span className="text-gray-700">Surname</span>
+                  <input
+                    type="text"
+                    className="form-input mt-1 block w-full"
+                    placeholder="john@example.com"
+                  />
+                </label>
+              </div>
+
+
+              <div className="flex gap-4 border-2 p-2">
+                <label className="border-2">
+                  <span className="text-gray-700">E-mail</span>
+                  <input
+                    type="email"
+                    className="form-input mt-1 block w-full"
+                  />
+                </label>
+                <label className="border-2 w-full">
+                  <span className="text-gray-700">How can we help you?</span>
+                  
+                  <input
+                    type="text"
+                    className="form-input mt-1 block w-full"
+                    
+                  /><selection>
+                    <option>g</option>
+                  </selection>
+                </label>
+              </div>
+            </div>
             {/* name input */}
-            
           </form>
-        </div>S
+        </div>
       </div>
       {/* left side */}
     </div>
