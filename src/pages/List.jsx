@@ -29,8 +29,8 @@ const bgStyle = {
   backgroundImage: `url(${BgImage})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundAttachment: 'fixed',
+  // backgroundPosition: 'center',
+  // backgroundAttachment: 'fixed',
 };
 const List = () => {
   return (

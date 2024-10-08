@@ -5,16 +5,36 @@ const ContactForm = () => {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const handleSubmit = (e) => {
+  const [error, setError] = useState('');
+
+
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("full name", fullname);
-    console.log("email", email);
-    console.log("message", message);
-  }
+    console.log('full name', fullname);
+    console.log('email', email);
+    console.log('message', message);
+
+    const res = await fetch('api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify({ fullname, email, message }),
+    });
+    const {msg} = await res.json();
+    setError(msg);
+    console.log(error)
+  };
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit} className="bg-[#f9f9f9] m-8 p-4 flex flex-col gap-5">
+      <form
+      method='POST'
+        onSubmit={handleSubmit}
+        className="bg-[#f9f9f9] m-8 p-4 flex flex-col gap-5"
+      >
         <div>
           <label htmlFor="fullname">Full name</label>
           <input

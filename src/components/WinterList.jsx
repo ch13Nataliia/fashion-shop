@@ -31,17 +31,17 @@ const WinterData = [
     img: Lot3,
     bhp: 14,
     title: 'Midi jersey dress',
-    info: 'Midi jersey dress with loose boat neck with fold-over that can also be worn off-shoulder, long sleeves. Vertical seams at the front, logo embroidered with tonal thread on the cuff, fitted. ',
+    info: 'Midi jersey dress with loose boat neck with fold-over that can also be worn off-shoulder, long sleeves. Vertical seams at the front, logo embroidered with tonal  cuff. ',
     price: '$179',
   },
 ];
 const WinterList = () => {
   return (
-    <div>
-      <ul className="flex justify-center items-center space-x-6">
+    <div className='container m-8'>
+      <ul className="grid md:grid-cols-3 sm:grid-cols-2 justify-center items-center space-x-6 p-10">
         {WinterData.map(
           ({ _id, title, img, bhp, info, category, price }, i) => (
-            <div key={i} className="max-w-[350px] space-y-6 shadow-lg p-6">
+            <div key={i} className="max-w-[350px] max-h-[850px] space-y-6 shadow-lg p-6">
               <div className="text-xl font-bold uppercase">
                 <p>
                   {title} BHP: {bhp}
