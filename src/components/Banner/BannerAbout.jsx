@@ -8,7 +8,7 @@ const bgStyle = {
 const BannerAbout = () => {
   return (
     <section>
-       <div className=" h-[750px] bg-cover   bg-no-repeat " style={bgStyle}></div>
+       <div className=" lg:h-[1050px] md:h-[550px] sm:h-[350px] w-full  bg-cover bg-center bg-no-repeat " style={bgStyle}></div>
     </section>
 
    
