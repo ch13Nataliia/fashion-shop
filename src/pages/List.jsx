@@ -29,6 +29,8 @@ const bgStyle = {
   backgroundImage: `url(${BgImage})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
+  width: '100%',
+  height: '100%',
   // backgroundPosition: 'center',
   // backgroundAttachment: 'fixed',
 };

@@ -5,7 +5,7 @@ import { SlideLeft } from '../../utility/animation';
 const Banner2 = () => {
   return (
     <div className="container my-14 font-playfair ">
-      <div className=" flex bg-[#f9f9f9] py-14 md:py-24 justify-center items-center">
+      <div className=" flex  py-14 md:py-24 justify-center items-center">
         {/* brand info */}
         <div className="flex flex-col justify-center text-center space-y-8 lg:px-44">
           <motion.h1
